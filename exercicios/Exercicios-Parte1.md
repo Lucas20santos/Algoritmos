@@ -1,4 +1,4 @@
-# Exercicios JavaScript
+# Exercicios Algoritmo
 
 ## Encontre a diferença simétrica
 
