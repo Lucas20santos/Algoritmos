@@ -45,3 +45,31 @@ Compare e atualize o estoque armazenado em uma matriz 2D com uma segunda matriz 
 1. Esperando :4. updateInventory([[21, "Bowling Ball"], [2, "Dirty Sock"], [1, "Hair Pin"], [5, "Microphone"]], [])deve retornar [[21, "Bowling Ball"], [2, "Dirty Sock"], [1, "Hair Pin"], [5, "Microphone"]].
 1. Esperando :5. updateInventory([], [[2, "Hair Pin"], [3, "Half-Eaten Apple"], [67, "Bowling Ball"], [7, "Toothpaste"]])deve retornar [[67, "Bowling Ball"], [2, "Hair Pin"], [3, "Half-Eaten Apple"], [7, "Toothpaste"]].
 1. Esperando :6. updateInventory([[0, "Bowling Ball"], [0, "Dirty Sock"], [0, "Hair Pin"], [0, "Microphone"]], [[1, "Hair Pin"], [1, "Half-Eaten Apple"], [1, "Bowling Ball"], [1, "Toothpaste"]])deve retornar [[1, "Bowling Ball"], [0, "Dirty Sock"], [1, "Hair Pin"], [1, "Half-Eaten Apple"], [0, "Microphone"], [1, "Toothpaste"]].
+
+
+```js
+    function sym(...args) 
+    {
+    let diferenca = [];
+    const getSymmetricDifference = (setA, setB) => 
+    {
+        const diff1 = [...setA].filter(val => !setB.has(val));
+        const diff2 = [...setB].filter(val => !setA.has(val))
+
+        return new Set([...diff1, ...diff2])
+    }
+
+    let currentDifference = new Set(args[0]);
+    for (let i = 1; i < args.length; i++) 
+    {
+        const nextArray = args[i];
+        const nextSet = new Set(nextArray);
+        currentDifference = getSymmetricDifference(currentDifference, nextSet);
+
+    }
+    return Array.from(currentDifference).sort();
+    }
+
+    console.log(sym([1, 2, 3], [5, 2, 1, 4]));
+
+```
