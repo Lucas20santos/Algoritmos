@@ -4,24 +4,16 @@ function updateInventory(arr1, arr2)
 
     for(let i = 0; i < arr2.length; i++)
     {
-        var naoExiste = true;
-
-        for (let j = 0; j < arr1.length; j++)
+        if(!arr1.includes(arr2[i][1]))
         {
-            if(arr2[i][1] === arr1[j][1])
-            {
-                arr1[j][0] += arr2[i][0];
-                naoExiste = false;
-            }
+            console.log(arr2[i] + "-Sim");
         }
-
-        if (naoExiste)
+        else
         {
-            newInv.push(arr2[i]);
-            naoExiste = false;
+            console.log(arr2[i] + "-Não");
         }
     }
-    return newInv;
+    return arr1;
 }
 
 // Example inventory lists
