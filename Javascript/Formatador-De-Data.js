@@ -36,6 +36,27 @@ console.log(formatDate("September 7, 512"))
 console.log(formatDate("May 4, 1950"))
 console.log(formatDate("February 29, 1992"))
 
+// TERCEIRA SOLUÇÃO
+
+function formatDate(dateString) 
+{
+    // ... dicionario (mapa)
+    // ...
+
+    // Usa RegEx para extrair o mês, dia e ano em grupos separados
+    const match = dateString.match(/(\w+)\s(\d+),\s(\d+)/);
+    
+    // match[1] = Mês (ex: "December")
+    // match[2] = Dia (ex: "6")
+    // match[3] = Ano (ex: "2025")
+    
+    const mes = dicionario[match[1]];
+    const ano = match[3];
+    const dia = match[2].padStart(2, '0');
+
+    return `${ano}-${mes}-${dia}`;
+}
+
 // SOLUÇÃO QUE PASSANDO NO TESTES
 
 function formatDate(dateString) 
