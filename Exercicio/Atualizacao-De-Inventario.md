@@ -17,3 +17,8 @@ Por exemplo, dado um estoque de [[2, "apples"], [5, "bananas"]]e uma remessa de 
 1. Esperando :2. update_inventory([[2, "apples"], [5, "bananas"]], [[1, "apples"], [3, "bananas"], [4, "oranges"]])deve retornar [[3, "apples"], [8, "bananas"], [4, "oranges"]].
 1. Esperando :3. update_inventory([], [[10, "apples"], [30, "bananas"], [20, "oranges"]])deve retornar [[10, "apples"], [30, "bananas"], [20, "oranges"]].
 1. Esperando :4. update_inventory([[0, "Bowling Ball"], [0, "Dirty Socks"], [0, "Hair Pin"], [0, "Microphone"]], [[1, "Hair Pin"], [1, "Half-Eaten Apple"], [1, "Bowling Ball"], [1, "Toothpaste"]])deve retornar [[1, "Bowling Ball"], [0, "Dirty Socks"], [1, "Hair Pin"], [0, "Microphone"], [1, "Half-Eaten Apple"], [1, "Toothpaste"]].
+
+## Soluções
+
+- [Python](../Python/Atualizacao-De-Inventario.py)
+- [Javascript](../Javascript/Atualizacao-De-Inventario.js)
