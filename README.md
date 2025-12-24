@@ -20,6 +20,6 @@
 
 ## Soluções
 
-### [Python](../Algoritmos/Python)
+### [Python](../Algoritmos/Python/)
 
 ### [Javascript](../Algoritmos/Javascript/)
