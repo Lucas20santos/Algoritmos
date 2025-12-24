@@ -20,6 +20,6 @@
 
 ## Soluções
 
-### [Python](../Algoritmos/Python/)
+### [Python](https://github.com/Lucas20santos/Algoritmos/tree/main/Python)
 
-### [Javascript](../Algoritmos/Javascript/)
+### [Javascript](https://github.com/Lucas20santos/Algoritmos/tree/main/Python/Javascript/)
