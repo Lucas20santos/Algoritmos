@@ -22,4 +22,6 @@
 
 ### [Python](https://github.com/Lucas20santos/Algoritmos/tree/main/Python)
 
+Alguns exercicios do Python está dentro do arquivo: [exercicio-parte3.ipynb](https://github.com/Lucas20santos/Algoritmos/blob/main/Python/exercicio-parte3.ipynb)
+
 ### [Javascript](https://github.com/Lucas20santos/Algoritmos/tree/main/Python/Javascript/)
