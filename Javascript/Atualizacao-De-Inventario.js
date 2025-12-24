@@ -1,6 +1,6 @@
 // PRIMEIRA VERSÃO => FEITA POR MIM
 
-function updateInventory(inventory, shipment) 
+function updateInventory(inventory, shipment)
 {
   const inventario = new Map();
   const armazenamento = [];

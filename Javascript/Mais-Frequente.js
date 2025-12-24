@@ -63,7 +63,7 @@ function mostFrequent(arr)
 {
   
   const frequencia = new Map();
-  // Contar as ocorrencia
+  
   for(const item of arr)
   {
     const contagemAtual = frequencia.get(item) || 0;
